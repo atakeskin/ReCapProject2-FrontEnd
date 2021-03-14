@@ -1,0 +1,9 @@
+<div *ngIf="dataLoaded==false" class="spinner-border text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<h3>Renk Listesi</h3>
+<hr/>
+<ul *ngIf="dataLoaded==true" class="list-group">
+  <li *ngFor="let color of colors" class="list-group-item">{{color.name}}</li>
+</ul>
