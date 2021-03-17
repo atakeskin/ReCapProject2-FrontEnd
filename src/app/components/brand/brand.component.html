@@ -5,5 +5,5 @@
 <h3>Marka Listesi</h3>
 <hr/>
 <ul *ngIf="dataLoaded==true" class="list-group">
-  <li *ngFor="let brand of brands" class="list-group-item">{{brand.name}}</li>
+  <li (click)="setCurrentBrand(brand)" *ngFor="let brand of brands" class="list-group-item">{{brand.name}}</li>
 </ul>

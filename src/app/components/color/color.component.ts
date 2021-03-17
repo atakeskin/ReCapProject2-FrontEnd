@@ -24,4 +24,8 @@ export class ColorComponent implements OnInit {
       this.dataLoaded=true;
     })
   }
+
+  setCurrentColor(color:Color){
+    alert(color.name + " renk seçildi.")
+  }
 }

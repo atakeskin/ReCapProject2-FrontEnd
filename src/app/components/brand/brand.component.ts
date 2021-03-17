@@ -24,4 +24,8 @@ export class BrandComponent implements OnInit {
       this.dataLoaded=true;
     })
   }
+
+  setCurrentBrand(brand:Brand){
+    alert(brand.name + " markası seçildi.")
+  }
 }
